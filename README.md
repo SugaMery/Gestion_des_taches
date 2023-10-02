@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Application de Gestion de Tableaux de Tâches
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cette application est une application de gestion de tableaux de tâches développée en utilisant React. Elle vous permet de créer, afficher et gérer des tableaux de tâches avec des listes de tâches individuelles.
 
-## Available Scripts
+## Composants
 
-In the project directory, you can run:
+L'application est composée de plusieurs composants React pour gérer les différentes fonctionnalités.
 
-### `npm start`
+### Composant AddTaskBoard
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Le composant `AddTaskBoard` permet d'ajouter un nouveau tableau de tâches. Il dispose d'un champ de saisie pour entrer le nom du tableau, et d'un bouton pour ajouter le tableau à la liste.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Composant TaskBoard
 
-### `npm test`
+Le composant `TaskBoard` représente un tableau de tâches individuel. Il affiche le nom du tableau, permet d'ajouter de nouvelles tâches, de les afficher, de les éditer et de les supprimer. Vous pouvez également supprimer le tableau de tâches lui-même.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Composant Task
 
-### `npm run build`
+Le composant `Task` représente une tâche individuelle dans un tableau de tâches. Il permet d'afficher les détails de la tâche, de l'éditer, de la sauvegarder, de l'annuler et de la supprimer.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Composant TaskList
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Le composant `TaskList` affiche la liste des tâches dans un tableau donné. Il affiche le nom du tableau et la liste des tâches associées.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Fonctionnalités
 
-### `npm run eject`
+L'application propose les fonctionnalités suivantes :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Création de nouveaux tableaux de tâches.
+- Ajout, édition et suppression de tâches dans chaque tableau.
+- Sauvegarde des données dans le stockage local pour une utilisation persistante.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Pour exécuter cette application localement, suivez les étapes suivantes :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Assurez-vous d'avoir Node.js et npm installés sur votre machine.
+2. Ouvrez un terminal dans le répertoire racine du projet.
+3. Exécutez `npm install` pour installer les dépendances.
+4. Exécutez `npm start` pour lancer l'application en mode développement.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
